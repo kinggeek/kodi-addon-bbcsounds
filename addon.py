@@ -144,7 +144,7 @@ def mode_episode(pid):
 
         # Pick the first stream available for the highest bitrate item
         picked_stream = audio_items[0]
-        picked_url = picked_stream["connection"][1]["href"]
+        picked_url = picked_stream["connection"][2]["href"]
 
         xbmc.log('Picked the {0} stream with the bitrate {1}'.format(picked_stream['encoding'], picked_stream['bitrate']), level=xbmc.LOGINFO)
 
